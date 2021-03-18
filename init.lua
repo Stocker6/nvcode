@@ -52,5 +52,7 @@ else
   require('lsp.html-ls')
   require('lsp.efm-general-ls')
   require('lsp.virtual_text')
+  require('lsp.vuels-ls')
+  require('lsp.intelephense-ls')
 end
 
