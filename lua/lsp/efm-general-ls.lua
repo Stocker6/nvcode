@@ -41,7 +41,7 @@ local shfmt = {
 require"lspconfig".efm.setup {
     -- init_options = {initializationOptions},
     init_options = {documentFormatting = true, codeAction = false},
-    filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml"},
+    filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml", "vue"},
     settings = {
         rootMarkers = {".git/"},
         languages = {
@@ -54,6 +54,7 @@ require"lspconfig".efm.setup {
             css = {prettier},
             json = {prettier},
             yaml = {prettier_yaml},
+            vue = {prettier, eslint},
         }
     }
 }
