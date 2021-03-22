@@ -1,4 +1,7 @@
-# NVCode
+![NVCode Logo](./utils/media/nvcode_logo.png)
+
+
+![NVCode Demo](./utils/media/demo.png)
 
 If you are looking for my old configs checkout the two snapshot branches
 on this repo, there is one for CoC and one for Native LSP
@@ -140,29 +143,34 @@ Topic](https://github.com/topics/vscode-snippets)
 **HIGH PRIORITY**
 
 - learn nvim-dap in depth
-- add utf8 line col and spaces (maybe blame)
-- potentially switch to dashboard
-- vim ult test
-- learn what opt is
-
-**LOW PRIORITY**
-
 - Implement what I can from this java config:
   [link](https://github.com/mfussenegger/nvim-jdtls/wiki/Sample-Configurations)
   - better ui for code actions - formatting
   - setup junit tests for java
 - neovim lightbulb config
-- better autoimport
-- can' find global bianry for markdownlint
-- spell not activated in readme Markdown
-- list all binaries needed for functionality
-- keep and eye on indent guides plugin for thin lines
+- better vscode support
+
+
+**LOW PRIORITY**
+
 - look into autoinstall lsp
-- update Vista symbols
 - get logo
-- configure neogit
-- toggle virtual text diagnostics
-- move language servers not installed with npm to neovim local share
-  location
 - json config file (luajson)
+- look into emmet-ls
 - better install script, support both nvim and nvcode paths
+- toggle virtual text diagnostics
+- configure neogit
+- list all binaries needed for functionality
+- html snippets in react (maybe)
+- configure kshenoy/vim-signature
+- vim ult test
+- what is `fzy`
+- https://github.com/pwntester/octo.nvim
+
+**PLUGIN BUGS**
+
+- finding files from dashboard sometimes number not set
+- spell not activated in readme Markdown
+- better autoimport
+- can't find global binary for markdownlint
+- keep and eye on indent guides plugin for thin lines
