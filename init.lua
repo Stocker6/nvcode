@@ -51,4 +51,6 @@ require('lsp.docker-ls')
 require('lsp.html-ls')
 require('lsp.efm-general-ls')
 require('lsp.virtual_text')
+require('lsp.intelephense-ls')
+require('lsp.vuels-ls')
 
