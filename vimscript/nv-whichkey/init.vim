@@ -21,7 +21,8 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-let g:which_key_map[','] = [ '<Plug>(emmet-expand-abbr)'                       , 'exapnd tags' ]
+let g:which_key_map[';'] = [ ':Dashboard'                                      , 'home screen' ]
+let g:which_key_map[','] = [ '<Plug>(emmet-expand-abbr)'                       , 'expand tags' ]
 let g:which_key_map['"'] = [ '<Plug>PeekupOpen'                                , 'registers' ]
 let g:which_key_map['?'] = [ ':NvimTreeFindFile'                               , 'find current file' ]
 let g:which_key_map['e'] = [ ':NvimTreeToggle'                                 , 'explorer' ]
@@ -84,6 +85,19 @@ let g:which_key_map.b = {
       \ '?' : ['Buffers'                , 'fzf-buffer'],
       \ }
 
+" d is for debug
+let g:which_key_map.d = {
+      \ 'name' : '+debug' ,
+      \ 'b' : ['DebugToggleBreakpoint '        , 'toggle breakpoint'],
+      \ 'c' : ['DebugContinue'                 , 'continue'],
+      \ 'i' : ['DebugStepInto'                 , 'step into'],
+      \ 'o' : ['DebugStepOver'                 , 'step over'],
+      \ 'r' : ['DebugToggleRepl'               , 'toggle repl'],
+      \ 's' : ['DebugStart'                    , 'start'],
+      \ }
+      " \ 'O' : ['DebugStepOut'                  , 'next-buffer'],
+      " \ 'S' : ['DebugGetSession '              , 'fzf-buffer'],
+
 
 " F is for fold
 let g:which_key_map.F = {
@@ -121,11 +135,8 @@ let g:which_key_map.s = {
 
 let g:which_key_map.S = {
       \ 'name' : '+Session' ,
-      \ 'c' : [':SClose'          , 'Close Session'],
-      \ 'd' : [':SDelete'         , 'Delete Session'],
-      \ 'l' : [':SLoad'           , 'Load Session'],
-      \ 's' : [':Startify'        , 'Start Page'],
-      \ 'S' : [':SSave'           , 'Save Session'],
+      \ 's' : [':SessionSave'           , 'save session'],
+      \ 'l' : [':SessionLoad'           , 'load Session'],
       \ }
 
 " g is for git

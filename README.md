@@ -1,4 +1,6 @@
-# NVCode
+![NVCode Logo](./utils/media/nvcode_logo.png)
+
+![NVCode Demo](./utils/media/demo.png)
 
 If you are looking for my old configs checkout the two snapshot branches
 on this repo, there is one for CoC and one for Native LSP
@@ -20,21 +22,23 @@ sudo rm -r neovim
 After installing the [Neovim
 extension](https://github.com/asvetliakov/vscode-neovim) in VSCode
 
-I recommend using this alongside the VSCode which-key extension
+I recommend using this alongside the VSCode
+[which-key](https://github.com/VSpaceCode/vscode-which-key) extension
 
-Along with some of my config files you can find in utils/vscode\_config
+You will also need `settings.json` and `keybindings.json` which can be
+found in utils/vscode\_config
 
 Point the nvim path to your `nvim` binary
 
-Point your `init.lua` path to:
+Point your `init.vim` path to:
 
 ``` vim
-$HOME/.config/nvim/lua/nv-vscode/init.lua
+$HOME/.config/nvim/vimscript/nv-vscode/init.vim
 ```
 
 ## Clipboard Support
 
-- On Mac `pbcopy` should be builtin
+- On Mac `pbcopy` should be built-in
 
 - Ubuntu
 
@@ -135,34 +139,42 @@ git config --global github.user <username>
 If you are looking for snippets checkout this github topic: [Snippet
 Topic](https://github.com/topics/vscode-snippets)
 
+## De-bugging
+
+To set up your particular debugger, look here:
+[link](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)
+
 ## TODO
 
 **HIGH PRIORITY**
 
-- learn nvim-dap in depth
-- add utf8 line col and spaces (maybe blame)
-- potentially switch to dashboard
-- vim ult test
-- learn what opt is
+- better install script, simple install just support `~/.config/nvim`
+  path
+- add badges to readme
 
 **LOW PRIORITY**
 
+- move to ultisnips
 - Implement what I can from this java config:
   [link](https://github.com/mfussenegger/nvim-jdtls/wiki/Sample-Configurations)
   - better ui for code actions - formatting
   - setup junit tests for java
-- neovim lightbulb config
-- better autoimport
-- can' find global bianry for markdownlint
-- spell not activated in readme Markdown
-- list all binaries needed for functionality
-- keep and eye on indent guides plugin for thin lines
-- look into autoinstall lsp
-- update Vista symbols
-- get logo
-- configure neogit
-- toggle virtual text diagnostics
-- move language servers not installed with npm to neovim local share
-  location
+- look into auto-install lsp
 - json config file (luajson)
-- better install script, support both nvim and nvcode paths
+- get logo
+- look into emmet-ls
+- toggle virtual text diagnostics
+- configure neogit
+- list all binaries needed for functionality
+- html snippets in react (maybe)
+- configure kshenoy/vim-signature
+- vim ult test
+- what is `fzy`
+- https://github.com/pwntester/octo.nvim
+- configure surround
+
+**PLUGIN BUGS**
+
+- finding files from dashboard sometimes number not set
+- better auto-import (jsx)
+- keep and eye on indent guides plugin for thin lines
