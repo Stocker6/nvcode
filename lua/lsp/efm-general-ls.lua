@@ -63,7 +63,7 @@ require"lspconfig".efm.setup {
             yaml = {prettier_global},
             -- markdown = {markdownPandocFormat, markdownlint},
             markdown = {markdownPandocFormat},
-            vue = {prettier_global}
+            vue = {prettier, eslint}
         }
     }
 }
