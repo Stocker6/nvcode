@@ -4,5 +4,5 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 require'lspconfig'.vuels.setup {
     on_attach = require'lsp'.common_on_attach,
-    capabilities = capabilities
+    settings = {format_enable = false}
 }
