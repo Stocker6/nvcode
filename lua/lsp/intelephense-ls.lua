@@ -6,3 +6,7 @@ require'lspconfig'.intelephense.setup {
     on_attach = require'lsp'.common_on_attach,
     capabilities = capabilities
 }
+
+vim.api.nvim_exec([[
+	autocmd BufRead,BufNewFile *.blade.php set filetype=html
+]], false)
