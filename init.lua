@@ -64,6 +64,7 @@ require('lsp.virtual_text')
 require('lsp.intelephense-ls')
 require('lsp.vuels-ls')
 
+require('lsp.latex-ls')
 
 -- vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
 -- vim.lsp.handlers["textDocument/publishDiagnostics"] = nil
